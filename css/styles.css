@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* -----------------Variables */
+:root {
+--green-color: #7acc2d;
+--white-color: white;
+--black-color: #313337;
+--grey-color: grey;
+/* ----------------Tipografia */
+--normal: 12px;
+/* -----------------Espaciado */
+--space: 10px;
+/* ----------------Box Shadow */
+--box: 0 0 5px #969090;
+}
+/* -----------------Variables */
+
+html, body {
+     padding: 0px;
+     margin: 0px;
+     font-size: var(--normal);
+     font-family: 'Open Sans', sans-serif;
+}
+
+p, label {
+    font-size: var(--normal);
+}
+
+
+nav {
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--normal);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    padding-left: 20px;
+    list-style: none;
+    /* color: white; */
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+nav li a:hover {
+    color: var(--white-color);
+}
+
+/* ---------------------------Main Section */
+
+
+
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+
+.products {
+    background-image: url(../images/curve.png);
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+
+}
+
+.product {
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.product .content {
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+.img_content {
+    text-align: center;
+
+}
+.main-button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.main-button:hover {
+    background-color: var(--green-color);
+}
+
+/* ---------inicio seccion caracteristicas */
+
+.caracteristicas {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 10%;
+}
+
+.element-box {
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: 10px;
+}
+.element {
+    /* border: 1px solid blue; */
+    text-align: center;
+    padding: 0 50px;
+}
+
+/* -------finaliza seccion caracteristicas */
+
+/* ---------------inicio seccion menciones */
+.secciones {
+    border: var(--grey-color);
+    padding: 10%;
+    background-color: #eeeeee;
+   
+    
+}
+
+.secciones h1 {
+    text-align: center;
+}
+.section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.section {
+    /* border: 1px solid blue; */
+    display: flex; 
+    justify-content: space-between;
+}
+
+.section-element {
+    background-image: url(../images/section-element.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 239px;
+    /* margin: 0 5px; */
+    box-shadow: var(--box);
+}
+
+.section-text {
+    text-align: left;
+    
+    margin: 5px;
+
+}
+/* -------------finaliza seccion menciones */
+/* -------------------inciia seccion venta */
+
+.modulo-pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo-pago-images {
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data {
+    margin-top: var(--space);
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo-pago .main-button {
+    margin-top: 10px;
+}
+
+/* .modulo-pago input {
+    padding-bottom: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color); 
+    box-sizing: border-box;
+} */
+
+/* --------------------final seccion venta */
+/* ------------------inciia seccion footer */
+
+.footer {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-color);
+}
+
+.contact a, .terminos a{
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.terminos {
+    color: var(--white-color);
+}
+
+.mail a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+/* ------------------.final seccion footer */
+
+/* --------------------inicio seccion faqs */
+.faqs {
+    margin: 8% 20% 5% 10%;
+}
+
+.faqs-title {
+    font-size: 30px;
+}
+
+.container-title {
+    font-size: 30px;
+}
+
+.row-img {
+    width: 230px;
+    height: 230px;
+}
+
+.product-title h1 {
+    margin: 150px 10px 104px 10px;
+}
